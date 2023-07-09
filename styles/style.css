@@ -4,6 +4,7 @@ html {
   image-rendering: crisp-edges;   /* Firefox doesn't handle pixelated */
   image-rendering: optimizeSpeed; /* Old browsers don't handle either */
   image-rendering: pixelated;
+  text-align: center;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

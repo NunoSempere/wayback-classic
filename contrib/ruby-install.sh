@@ -6,6 +6,8 @@ sudo make install
 
 echo "Installing ruby. This might take a while (e.g., 7 mins on this commit's author Digital Ocean droplet)"
 ruby-install --system ruby 3.1.2
+sudo ln -s /usr/local/bin/ruby /usr/bin/ruby # ruby installs it to /usr/local/bin/ruby, but some gems expect /usr/bin/ruby
 ruby -v
 
-sudo gem install webrick
+cd -
+sudo bundle install
