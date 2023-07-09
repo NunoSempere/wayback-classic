@@ -7,3 +7,5 @@ sudo make install
 echo "Installing ruby. This might take a while (e.g., 7 mins on this commit's author Digital Ocean droplet)"
 ruby-install --system ruby 3.1.2
 ruby -v
+
+sudo gem install webrick
