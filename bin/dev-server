@@ -3,7 +3,7 @@
 require_relative '../cgi-bin/lib/web_client/cache'
 require 'webrick'
 
-WEBrick::HTTPServer.new(Port: ENV.fetch('PORT', 8000),
+WEBrick::HTTPServer.new(Port: ENV.fetch('PORT', 3336),
                         DocumentRoot: File.expand_path('..', __dir__),
                         # https://memo88.hatenablog.com/entry/20130309/1362849357, ありがとうございます!
                         CGIInterpreter: '/usr/bin/ruby -Eutf-8:utf-8').tap do |server|
