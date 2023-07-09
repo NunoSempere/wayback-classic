@@ -5,6 +5,7 @@ html {
   image-rendering: optimizeSpeed; /* Old browsers don't handle either */
   image-rendering: pixelated;
   text-align: center;
+  font-size: 25px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
